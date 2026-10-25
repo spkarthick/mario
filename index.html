@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#233b37"><title>Desktop Adventure — A little out of office</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='8' y='6' width='24' height='29' rx='9' fill='%234a9688'/%3E%3Cpath d='M4 15h32' stroke='%23efb65c' stroke-width='5'/%3E%3C/svg%3E"><link rel="stylesheet" href="/src/style.css"></head>
+<body>
+<header class="masthead"><a class="brand" href="/" aria-label="Desktop Adventure home"><span class="brand-mark">d<span>·</span>a</span><span>SMALL WORLD. BIG ADVENTURE.</span></a><div class="edition"><i></i> THE DESK COLLECTION <span>№ 001</span></div></header>
+<main>
+  <div class="game-topline"><span><b>DESKTOP ADVENTURE</b><em>A little out of office.</em></span><button id="sound" aria-label="Turn sound off" title="Toggle sound">♫ <span>SOUND ON</span></button></div>
+  <section id="game-shell" aria-label="Desktop Adventure keyboard platform game">
+    <canvas id="game" width="1280" height="720" tabindex="0" aria-label="Game. Move with A and D or arrow keys, jump with Space, W, or up arrow. Escape pauses. R restarts."></canvas>
+    <div id="hud" class="hidden"><div class="hud-left"><span class="avatar">P</span><span id="health" aria-label="3 health points">♥ ♥ ♥</span><span class="hud-divider"></span><span class="clip-icon" aria-hidden="true"><svg viewBox="0 0 24 32"><path d="M11 9v13c0 5-7 5-7 0V8C4-1 19-1 19 8v15c0 10-19 10-19 0V9" transform="translate(2 1)"/></svg></span><span id="clip-count">00</span><span class="clip-total" id="clip-total">/ 00</span></div><div class="progress-wrap"><span id="section-name">01 · STATIONERY TRAIL</span><div class="progress-track"><i id="progress"></i></div></div><button id="pause-button" aria-label="Pause game">Ⅱ</button></div>
+    <div id="overlay" class="overlay"><div class="intro"><div class="eyebrow"><span></span> AN ORDINARY DESK. AN EXTRAORDINARY JOURNEY.</div><h1>Desktop<br><span>Adventure</span><i>™</i></h1><p>Step into a smaller world.<br>There’s a great adventure right under your nose.</p><button class="primary" id="play">Let’s explore <span>↗</span></button><div class="intro-controls"><kbd>←</kbd><kbd>→</kbd><span>move</span><kbd>SPACE</kbd><span>jump</span></div></div><span class="scene-caption">MEET PIP.<br><small>Small feet. A very big desk.</small></span><div class="scene-label">01 / THE STATIONERY TRAIL</div></div>
+    <div id="toast" role="status"></div><div id="section-banner"></div>
+    <div class="vignette"></div>
+  </section>
+  <footer><div class="controls"><span><kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd> Move</span><span><kbd>SPACE</kbd> Jump <small>hold to go higher</small></span><span><kbd>ESC</kbd> Pause</span><span><kbd>R</kbd> Restart</span></div><span class="footer-note">Take the scenic route. <span>✦</span></span></footer>
+  <div class="under"><span>A pocket-sized escape, made for your keyboard.</span><span>THREE CHAPTERS. ONE VERY BIG DESK.</span></div>
+</main>
+<script type="module" src="/src/game.js"></script>
+</body></html>
